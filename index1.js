@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const image1 = Media.addImage(doc, fs.readFileSync("./image/image1.jpg"))
 
-var docdata = {
+var docxData003 = {
     budgetyear: null,
     budgetsummary: 20000000,
     budgetinyear: 20000000,
@@ -71,7 +71,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.deptname,
+                    text: docxData003.deptname,
                     bold: true,
                 }),
             ],
@@ -83,7 +83,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.groupname,
+                    text: docxData003.groupname,
                     bold: true,
                 }),
             ],
@@ -95,7 +95,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.name,
+                    text: docxData003.name,
                     bold: true,
                 }),
             ],
@@ -107,7 +107,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.planname,
+                    text: docxData003.planname,
                     bold: true,
                 }),
             ],
@@ -119,7 +119,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.projectname,
+                    text: docxData003.projectname,
                     bold: true,
                 }),
             ],
@@ -131,7 +131,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.activityname,
+                    text: docxData003.activityname,
                     bold: true,
                 }),
             ],
@@ -143,7 +143,7 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.sourcename,
+                    text: docxData003.sourcename,
                     bold: true,
                 }),
             ],
@@ -155,14 +155,14 @@ doc.addSection({
                     bold: true,
                 }),
                 new TextRun({
-                    text: docdata.budgetsummary,
+                    text: docxData003.budgetsummary,
                     bold: true,
                 }),
             ],
         }),
         new Paragraph({
             children: [
-                new TextRun(docdata.budgetsummarytext),
+                new TextRun(docxData003.budgetsummarytext),
             ],
         }),
         new Paragraph({
@@ -190,7 +190,7 @@ doc.addSection({
                     text: "\tประมาณการฉบับนี้ตั้งขึ้นเพื่อควบคุมค่าใช้จ่ายใน โครงการ",
                 }),
                 new TextRun({
-                    text: docdata.name,
+                    text: docxData003.name,
                 }),
             ],
         }),
@@ -206,10 +206,10 @@ doc.addSection({
                     text: "\tดังนั้น เพื่อให้การดำเนินงานบรรลุตามวัตุประสงค์ที่วางไว้ จึงขอ ทั้งสิ้น ",
                 }),
                 new TextRun({
-                    text: docdata.budgetsummary,
+                    text: docxData003.budgetsummary,
                 }),
                 new TextRun({
-                    text: docdata.budgetsummarytext,
+                    text: docxData003.budgetsummarytext,
                 }),
                 new TextRun({
                     text: "\tตามรายละเอียด",
@@ -235,7 +235,7 @@ doc.addSection({
         }),
         new Paragraph({
             children: [
-                new TextRun(docdata.owner),
+                new TextRun(docxData003.owner),
             ],
         }),
         new Paragraph({
@@ -307,5 +307,5 @@ doc.addSection({
 });
 
 Packer.toBuffer(doc).then((buffer) => {
-    fs.writeFileSync("My Document.docx", buffer);
+    fs.writeFileSync("My Document.doc", buffer);
 });
