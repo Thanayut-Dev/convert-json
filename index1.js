@@ -27,7 +27,7 @@ var docdata = {
     budgetsummarytext: "(ยี่สิบล้านบาทถ้วน)",
 
     name: "การประชุมเตรียมการสัปดาห์น้ำแห่งเอเชีย ครั้งที่ 2\tThe 2nd Asia International Water Week Preparatory  \n",
-    owner: "\t\t\t\t\t\t\t\t\tนางทยิดา สิริธีรธำรง ฟัน ก็อรสตันเยอ",
+    owner: "\t\t\t\t\t\t\t\t\t  นางทยิดา สิริธีรธำรง ฟัน ก็อรสตันเยอ",
     criteria: "<p>สภาน้ำแห่งเอเชีย Asia Water Council  (AWC) มีวัตถุประสงค์เพื่อกระตุ้นและรองรับการเจริญเติบโตและการพัฒนาอย่างยั่งยืนของการบริหารจัดการน้ำในภูมิภาคเอเชีย โดยเน้นการมีส่วนร่วมของกลุ่มผู้มีส่วนได้ส่วนเสียอย่างทั่วถึง การสร้างความเข้าใจร่วมกันในประเด็นเกี่ยวกับการบริหารจัดการน้ำและการแก้ไขปัญหา และเพื่อก่อตั้งภาคีเครือข่ายความร่วมมือระหว่างประเทศสมาชิกในเอเชียและองค์กรนานาชาติอื่นๆ ซึ่งเลขาธิการสำนักงานทรัพยากรน้ำแห่งชาติ ได้ดำรงตำแหน่งเป็นสมาชิกกิตติมศักดิ์ (Honorary Membership) ของคณะกรรมการบริหารสภาน้ำแห่งเอเชีย เมื่อวันที่ 26 พฤษภาคม 2561 </p><p>การประชุม Asia International Water Week  จัดให้เป็นเวทีขององค์กรหรือกลุ่มต่างๆ ที่เกี่ยวกับด้านน้ำได้มีโอกาสมาพบปะแลกเปลี่ยนความรู้ ความก้าวหน้าในระดับประเทศ ระดับทวีป และระดับโลก นำไปสู่กรอบเป้าวัตถุประสงค์ร่วมกัน จุดมุ่งหมายคือผลักดันการพิจารณาปรับปรุงด้านน้ำให้เป็นวาระนโยบายในระดับต่างๆ ของแต่ละประเทศทั่วโลก ดังนั้น จึงควรให้มีการเข้าร่วมประชุมเพื่อรับทราบนโยบายและทิศทางในด้านน้ำ และเป็นการสนับสนุนกิจกรรมของ AWC</p><p></p><p></p>",
     objectives: "<p>&nbsp;&nbsp;&nbsp;&nbsp;1. เพื่อเตรียมการเข้าร่วมประชุม Asia International Water Week ครั้งที่ 2 เพื่อให้ทราบนโยบายและทิศทางของการจัดการน้ำในอนาคต</p><p>&nbsp;&nbsp;&nbsp;&nbsp;  2. เป็นการสนับสนุนกิจกรรมของ Asia Water Council (AWC)</p><p></p><p></p>",
     location: "<p>&nbsp;&nbsp;&nbsp;&nbsp;สาธารณรัฐอินโดนีเซีย</p><p></p><p></p>",
@@ -211,6 +211,9 @@ doc.addSection({
                 new TextRun({
                     text: docdata.budgetsummarytext,
                 }),
+                new TextRun({
+                    text: "\tตามรายละเอียด",
+                }),
             ],
         }),
         new Paragraph({
@@ -220,7 +223,18 @@ doc.addSection({
         }),
         new Paragraph({
             children: [
-                // new TextRun("\t\t\t\t\t\t\t\t\t(นาย ฐนโรจน์ วรรัฐประเสริฐ)"),
+            ],
+        }),
+        new Paragraph({
+            children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
                 new TextRun(docdata.owner),
             ],
         }),
@@ -231,24 +245,48 @@ doc.addSection({
         }),
         new Paragraph({
             children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
                 new TextRun({
-                    text: "\t\t\tผ่าน",
+                    text: "\t\t\t  ผ่าน",
                     bold: true,
                 }),
                 new TextRun({
-                    text: "\t\t\t\t\tอนุมัติ",
+                    text: "\t\t\t\t\t   อนุมัติ",
                     bold: true,
                 }),
             ],
         }),
         new Paragraph({
             children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
+            ],
+        }),
+        new Paragraph({
+            children: [
                 new TextRun({
-                    text: "\t\t(นาย อุทัย เตียนพลกรัง)",
+                    text: "\t\t      (นาย อุทัย เตียนพลกรัง)",
                     bold: true,
                 }),
                 new TextRun({
-                    text: "\t\t\t\t(นาย สมเกียรติ ประจำวงษ์)",
+                    text: "\t\t\t      (นาย สมเกียรติ ประจำวงษ์)",
                     bold: true,
                 }),
             ],
