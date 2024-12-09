@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "docx": "^5.0.2"
+    "docx": "^9.1.0"
   },
   "devDependencies": {},
   "scripts": {
